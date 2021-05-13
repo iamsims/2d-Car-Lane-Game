@@ -66,15 +66,13 @@ function drawRoad() {
   
   });
 
-  class Obstacle {
-    constructor(y) {
+  function Obstacle(y) {
       this.x = getRandomElement(possibleXPositions);
       this.y = y;
       this.prevY = this.y;
       this.speed = speed / 2;
-    }
   
-    detectCollision = () => {
+    this.detectCollision = () => {
       if (
         this.x === possibleXPositions[playerCarPositionX] &&
         Math.abs(playerCarPositionY - this.y) <= 179
@@ -85,7 +83,7 @@ function drawRoad() {
       }
     };
   
-    drawObstacle = () => {
+    this.drawObstacle = () => {
       const obstacle = new Image();
       obstacle.src = 'images/car.png';
       obstacle.onload = () => {
