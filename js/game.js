@@ -58,10 +58,10 @@ function drawRoad() {
   }
 
   document.addEventListener('keydown', (e) => {
-    if (e.code === 'ArrowLeft' && playerCarPositionX !=0)
+    if (e.key === 'a' && playerCarPositionX !=0)
       playerCarPositionX --;
   
-    if (e.code === 'ArrowRight' && playerCarPositionX !=2)
+    if (e.key === 'd' && playerCarPositionX !=2)
       playerCarPositionX ++;
   
   });

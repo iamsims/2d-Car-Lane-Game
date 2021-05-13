@@ -30,6 +30,7 @@ function init() {
 
 _('#start').addEventListener('click', () => {
   gamePaused = false;
+  _('.game-score').style.display = 'block';
   init();
   _('.game-initializatation-screen').style.display = 'none';
 });

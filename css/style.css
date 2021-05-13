@@ -27,6 +27,7 @@ canvas {
   justify-content: center;
   align-items: center;
   z-index: 4;
+  top:100px;
 }
 
 .game-over-screen {
@@ -52,7 +53,9 @@ canvas {
   padding: 30px;
   border: 1px solid black;
   border-radius: 15px;
-  background: #f5f5fc;
+  background:black;
+  color:white;
+  opacity:0.5;
 }
 
 .instructions ul {
@@ -76,7 +79,7 @@ button {
 }
 
 .game-score {
-  display: block;
+  display: none;
   position: absolute;
   z-index: 1;
 }
