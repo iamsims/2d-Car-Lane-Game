@@ -32,15 +32,16 @@ _('#start').addEventListener('click', () => {
   _('.game-initializatation-screen').style.display = 'none';
 });
 
-// _('#restart').addEventListener('click', () => {
-//     speed = 10;
-//     possibleXPositions = [60, 410, 760];
-//     playerCarPositionX = 1;
-//     playerCarPositionY = canvas.height-160;
-//     gamePaused = false;
+_('#restart').addEventListener('click', () => {
+    score = 0;
+    speed = 10;
+    possibleXPositions = [60, 410, 760];
+    playerCarPositionX = 1;
+    playerCarPositionY = canvas.height-160;
+    gamePaused = false;
   
-//   _('.game-score h4').innerText = score;
+  _('.game-score h4').innerText = score;
 
-//   init();
-//   _('.game-over-screen').style.display = 'none';
-// });
+  init();
+  _('.game-over-screen').style.display = 'none';
+});
