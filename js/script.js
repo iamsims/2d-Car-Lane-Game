@@ -13,6 +13,8 @@ function gameOver() {
     _('.received-highscore').style.display = 'block';
     _('.received-score').style.display = 'none';
   } else _('.received-score').style.display = 'block';
+
+  _('.game-score').style.display = 'none';
 }
 
 function init() {
@@ -39,8 +41,10 @@ _('#restart').addEventListener('click', () => {
     playerCarPositionX = 1;
     playerCarPositionY = canvas.height-160;
     gamePaused = false;
-  
+
+  _('.game-score').style.display = 'block';
   _('.game-score h4').innerText = score;
+
 
   init();
   _('.game-over-screen').style.display = 'none';
